@@ -72,7 +72,7 @@ function commands(q) {
         readOut("opening calculator..");
     }
     else if(q.includes("what is") || q.includes('who is')) {
-        window.open(`https:/www.google.com/search?q=${q.replace(" ", "+")}`, "_blank");
+        window.open(`https:/www.google.com/search?q=${q.replace(" ", "")}`, "_blank");
         const finalText = "this is what i found on internet regarding" + q;
         readOut(finalText)
     }
